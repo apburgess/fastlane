@@ -51,6 +51,7 @@ module Frameit
     STARLIGHT ||= "Starlight"
     SIERRA ||= "Sierra"
     SORTA_SAGE ||= "Sorta Sage"
+    DEEP_PURPLE ||= "Deep Purple"
 
     def self.all_colors
       Color.constants.map { |c| Color.const_get(c).upcase.gsub(' ', '_') }
@@ -135,8 +136,8 @@ module Frameit
     IPHONE_13_MINI ||= Frameit::Device.new("iphone-13-mini", "Apple iPhone 13 Mini", 11, [[1080, 2340], [2340, 1080]], 476, Color::MIDNIGHT, Platform::IOS)
     IPHONE_14 ||= Frameit::Device.new("iphone-14", "Apple iPhone 14", 12, [[1170, 2532], [2532, 1170]], 460, Color::MIDNIGHT, Platform::IOS)
     IPHONE_14_PLUS ||= Frameit::Device.new("iphone-14-plus", "Apple iPhone 14 Plus", 12, [[1284, 2778], [2778, 1284]], 458, Color::MIDNIGHT, Platform::IOS)
-    IPHONE_14_PRO ||= Frameit::Device.new("iphone-14-pro", "Apple iPhone 14 Pro", 12, [[1179, 2556], [2556, 1179]], 460, Color::PURPLE, Platform::IOS)
-    IPHONE_14_PRO_MAX ||= Frameit::Device.new("iphone14-pro-max", "Apple iPhone 14 Pro Max", 12, [[1290, 2796], [2796, 1290]], 458, Color::PURPLE, Platform::IOS)
+    IPHONE_14_PRO ||= Frameit::Device.new("iphone-14-pro", "Apple iPhone 14 Pro", 12, [[1179, 2556], [2556, 1179]], 460, Color::DEEP_PURPLE, Platform::IOS)
+    IPHONE_14_PRO_MAX ||= Frameit::Device.new("iphone14-pro-max", "Apple iPhone 14 Pro Max", 12, [[1290, 2796], [2796, 1290]], 458, Color::DEEP_PURPLE, Platform::IOS)
     IPAD_10_2 ||= Frameit::Device.new("ipad-10-2", "Apple iPad 10.2", 1, [[1620, 2160], [2160, 1620]], 264, Color::SPACE_GRAY, Platform::IOS)
     IPAD_AIR_2 ||= Frameit::Device.new("ipad-air-2", "Apple iPad Air 2", 1, [[1536, 2048], [2048, 1536]], 264, Color::SPACE_GRAY, Platform::IOS, Deliver::AppScreenshot::ScreenSize::IOS_IPAD)
     IPAD_AIR_2019 ||= Frameit::Device.new("ipad-air-2019", "Apple iPad Air (2019)", 2, [[1668, 2224], [2224, 1668]], 265, Color::SPACE_GRAY, Platform::IOS)
